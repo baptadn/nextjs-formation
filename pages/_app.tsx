@@ -9,10 +9,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <Sidebar />
       <div className="ml-auto mb-6 lg:w-[75%] xl:w-[80%] 2xl:w-[85%]">
         <Header />
-        <div className="px-6 pt-6 2xl:container">
-          <div className="flex h-[80vh] items-center justify-center rounded-xl border-2 border-dashed border-gray-300 dark:border-gray-600">
-            <Component {...pageProps} />
-          </div>
+        <div className="px-6 2xl:container">
+          <Component {...pageProps} />
         </div>
       </div>
     </div>
