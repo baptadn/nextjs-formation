@@ -7,6 +7,7 @@ export interface IMovie {
   title: string;
   poster_path: string;
   vote_average: number;
+  overview: string;
 }
 interface IProps {
   movies: IMovie[];
