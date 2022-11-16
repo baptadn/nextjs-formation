@@ -1,8 +1,7 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from "next";
 
 export default function handler(req: NextApiRequest, res: NextApiResponse) {
-  // server side
+  const { id } = req.query;
 
-  res.status(200).json({ name: "John Doe" });
+  res.status(200).json({ name: `Movie ${id}` });
 }
